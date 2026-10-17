@@ -1,0 +1,287 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f6faf7;
+    color: #24352b;
+    line-height: 1.6;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 18px;
+    padding: 20px 6%;
+    background: white;
+    box-shadow: 0 2px 12px #173d2410;
+}
+
+.logo {
+    color: #16804a;
+    font-size: 23px;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+nav a {
+    color: #34483a;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #16804a;
+}
+
+.cart {
+    background: #e6f5eb;
+    color: #16804a;
+    padding: 10px 15px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero {
+    margin: 35px auto;
+    width: 88%;
+    min-height: 330px;
+    padding: 45px;
+    border-radius: 22px;
+    background: linear-gradient(120deg, #dff5e6, #f1fbf4);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+}
+
+.hero-content {
+    max-width: 520px;
+}
+
+.subtitle {
+    color: #16804a;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 12px;
+}
+
+.hero h2 {
+    font-size: 42px;
+    line-height: 1.2;
+    margin: 15px 0;
+    color: #17643b;
+}
+
+.hero p {
+    color: #617267;
+    margin-bottom: 22px;
+}
+
+.shop-btn {
+    display: inline-block;
+    background: #16804a;
+    color: white;
+    text-decoration: none;
+    padding: 13px 22px;
+    border-radius: 9px;
+    font-weight: bold;
+}
+
+.shop-btn:hover {
+    background: #106238;
+}
+
+.hero-icon {
+    font-size: 100px;
+    background: white;
+    border-radius: 50%;
+    width: 180px;
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.categories,
+.products {
+    width: 88%;
+    margin: 55px auto;
+}
+
+.categories h2,
+.products h2,
+.about h2,
+.contact h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #17643b;
+}
+
+.category-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+    margin-top: 25px;
+}
+
+.category-card {
+    text-align: center;
+    padding: 25px 10px;
+    background: white;
+    border: 1px solid #e5eee7;
+    border-radius: 15px;
+}
+
+.category-card span {
+    font-size: 38px;
+}
+
+.category-card h3 {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.section-description {
+    color: #718075;
+    margin-bottom: 25px;
+}
+
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.product-card {
+    background: white;
+    border: 1px solid #e5eee7;
+    padding: 22px;
+    border-radius: 16px;
+    transition: transform 0.2s;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+.product-image {
+    height: 145px;
+    border-radius: 12px;
+    background: #edf8f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 65px;
+    margin-bottom: 18px;
+}
+
+.product-card h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.product-card p {
+    color: #7b887e;
+    font-size: 14px;
+}
+
+.product-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.price {
+    color: #16804a;
+    font-weight: bold;
+}
+
+.add-btn {
+    background: #16804a;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 12px;
+    cursor: pointer;
+}
+
+.add-btn:hover {
+    background: #106238;
+}
+
+.about,
+.contact {
+    width: 88%;
+    margin: 35px auto;
+    padding: 30px;
+    border-radius: 15px;
+    background: white;
+}
+
+.about p,
+.contact p {
+    color: #68776c;
+}
+
+footer {
+    text-align: center;
+    padding: 25px 15px;
+    background: #17643b;
+    color: white;
+    font-size: 13px;
+}
+
+@media (max-width: 650px) {
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav {
+        justify-content: center;
+        gap: 14px;
+    }
+
+    .hero {
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 28px 20px;
+    }
+
+    .hero h2 {
+        font-size: 32px;
+    }
+
+    .hero-icon {
+        width: 120px;
+        height: 120px;
+        font-size: 65px;
+    }
+
+    .category-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .product-list {
+        grid-template-columns: 1fr;
+    }
+}
