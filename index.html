@@ -1,0 +1,141 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mona Pharmacy</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <header class="navbar">
+        <h1 class="logo">💊 Mona Pharmacy</h1>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#products">Products</a>
+            <a href="#about">About Us</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <a href="#products" class="cart">
+            🛒 Cart <span id="cartCount">0</span>
+        </a>
+    </header>
+
+    <main>
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <p class="subtitle">YOUR HEALTH, OUR PRIORITY</p>
+                <h2>Your Health Starts Here</h2>
+                <p>
+                    Discover healthcare essentials and personal
+                    care products in one place.
+                </p>
+                <a href="#products" class="shop-btn">
+                    Explore Products
+                </a>
+            </div>
+
+            <div class="hero-icon">💚</div>
+        </section>
+
+        <section class="categories">
+            <h2>Shop by Category</h2>
+
+            <div class="category-list">
+                <div class="category-card">
+                    <span>💊</span>
+                    <h3>Medicines</h3>
+                </div>
+
+                <div class="category-card">
+                    <span>🧴</span>
+                    <h3>Skin Care</h3>
+                </div>
+
+                <div class="category-card">
+                    <span>🍊</span>
+                    <h3>Vitamins</h3>
+                </div>
+
+                <div class="category-card">
+                    <span>🩹</span>
+                    <h3>First Aid</h3>
+                </div>
+            </div>
+        </section>
+
+        <section class="products" id="products">
+            <h2>Featured Products</h2>
+            <p class="section-description">
+                Explore some of our healthcare essentials.
+            </p>
+
+            <div class="product-list">
+                <article class="product-card">
+                    <div class="product-image">🧴</div>
+                    <h3>Moisturizing Cream</h3>
+                    <p>Personal care</p>
+                    <div class="product-bottom">
+                        <span class="price">250 EGP</span>
+                        <button class="add-btn"
+                            data-name="Moisturizing Cream">
+                            Add to Cart
+                        </button>
+                    </div>
+                </article>
+
+                <article class="product-card">
+                    <div class="product-image">🩹</div>
+                    <h3>First Aid Kit</h3>
+                    <p>First aid essentials</p>
+                    <div class="product-bottom">
+                        <span class="price">180 EGP</span>
+                        <button class="add-btn"
+                            data-name="First Aid Kit">
+                            Add to Cart
+                        </button>
+                    </div>
+                </article>
+
+                <article class="product-card">
+                    <div class="product-image">🧴</div>
+                    <h3>Hand Sanitizer</h3>
+                    <p>Personal hygiene</p>
+                    <div class="product-bottom">
+                        <span class="price">75 EGP</span>
+                        <button class="add-btn"
+                            data-name="Hand Sanitizer">
+                            Add to Cart
+                        </button>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="about" id="about">
+            <h2>About Mona Pharmacy</h2>
+            <p>
+                We aim to make healthcare essentials easier
+                to explore through a simple and friendly
+                online shopping experience.
+            </p>
+        </section>
+
+        <section class="contact" id="contact">
+            <h2>Contact Us</h2>
+            <p>Email: monapharmacy@example.com</p>
+            <p>Address: Cairo, Egypt</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Mona Pharmacy. All rights reserved.</p>
+        <p>Educational demo website. Product details and prices are examples.</p>
+    </footer>
+
+</body>
+</html>
